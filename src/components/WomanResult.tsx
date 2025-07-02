@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:8080/api";
+// SPRÁVNE: Backend URL z .env alebo z Vercel env premenných
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 const sampleMeals = [
   {
@@ -175,7 +176,6 @@ export default function WomanResult() {
     </div>
   );
 }
-
 
 
 
